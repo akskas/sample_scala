@@ -6,15 +6,4 @@ scala:
 before_script:
   - mkdir -p shippable/testresults
   - ln -s ../target/test-reports shippable/testresults
-  - pwd
-
-script:
-  - pwd
-  - pushd $SHIPPABLE_BUILD_DIR/shippable
-  - ls -al
-  - popd
-  - pushd $SHIPPABLE_BUILD_DIR/shippable/testresults
-  - ls -al
-  - popd
-  - echo $test
 
