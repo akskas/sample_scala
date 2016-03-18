@@ -16,5 +16,5 @@ script:
   - pushd $SHIPPABLE_BUILD_DIR/shippable/testresults
   - ls -al
   - popd
-  - echo $test
+  - sbt test
 
